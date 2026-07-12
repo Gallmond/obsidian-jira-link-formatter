@@ -16,7 +16,12 @@ This necessitates a markdown link like so:
 Which is tedious to do over and over.
 
 ## Usage
-When active, any time you paste a jira issue link where:
+
+First set the domain of your jira isntance in the settings
+
+<img width="845" height="419" alt="image" src="https://github.com/user-attachments/assets/e15a6078-44a7-469c-bd7a-2d02f8dadaa9" />
+
+Then, any time you paste a jira issue link where:
 - it uses your configured domain in settings (case insensitive)
 - the issue id is [valid format](#jira-issue-id-format)
 - the url is valid
@@ -24,17 +29,17 @@ When active, any time you paste a jira issue link where:
 It will automatically arrive in the document as a markdown link.
 
 ```
-pasting 'https://example.atlassian.net/browse/TIC-123'
-becomes '[TIC-123](https://example.atlassian.net/browse/TIC-123)' 
+pasting 'https://company.atlassian.net/browse/TIC-123'
+becomes '[TIC-123](https://company.atlassian.net/browse/TIC-123)' 
 
-pasting 'https://example.atlassian.net/browse/TIC-123#anchor'
-becomes '[TIC-123](https://example.atlassian.net/browse/TIC-123#anchor)'
+pasting 'https://company.atlassian.net/browse/TIC-123#anchor'
+becomes '[TIC-123](https://company.atlassian.net/browse/TIC-123#anchor)'
 
-pasting 'https://example.atlassian.net/browse/TIC-123#anchor?query=string'
-becomes '[TIC-123](https://example.atlassian.net/browse/TIC-123#anchor?query=string)'
+pasting 'https://company.atlassian.net/browse/TIC-123#anchor?query=string'
+becomes '[TIC-123](https://company.atlassian.net/browse/TIC-123#anchor?query=string)'
 
-pasting 'example.atlassian.net/browse/TIC-123'
-becomes '[TIC-123](https://example.atlassian.net/browse/TIC-123)'
+pasting 'company.atlassian.net/browse/TIC-123'
+becomes '[TIC-123](https://company.atlassian.net/browse/TIC-123)'
 
 pasting 'custom.domain.com/weird/path/TIC-123/even/after'
 becomes '[TIC-123](https://custom.domain.com/weird/path/TIC-123/even/after)'
