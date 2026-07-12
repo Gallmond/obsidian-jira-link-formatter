@@ -1,0 +1,11 @@
+{
+	"id": "jira-ticket-link-formatter",
+	"name": "Jira Ticket Link Formatter",
+	"version": "1.0.0",
+	"minAppVersion": "1.0.0",
+	"description": "Auto-formats jira ticket links when pasting them into notes.",
+	"author": "Gavin",
+	"authorUrl": "https://obsidian.md",
+	"fundingUrl": "https://obsidian.md/pricing",
+	"isDesktopOnly": false
+}
